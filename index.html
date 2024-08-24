@@ -1,0 +1,112 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>JavaScript Arrays and Loops</title>  
+    <script>  
+        // 1. Declare and initialize an empty multidimensional array.  
+        var multiArray = [[]];  
+
+        // 2. Declare and initialize a multidimensional array representing a matrix.  
+        var matrix = [  
+            [1, 2, 3],  
+            [4, 5, 6],  
+            [7, 8, 9]  
+        ];  
+
+        // 3. Write a program to print numeric counting from 1 to 10.  
+        document.write("<h2>Counting from 1 to 10:</h2>");  
+        for (var i = 1; i <= 10; i++) {  
+            document.write(i + " ");  
+        }  
+        document.write("<br><br>");  
+
+        // 4. Multiplication table of a number based on user input.  
+        var tableNumber = prompt("Enter a number to see its multiplication table:");  
+        var tableLength = prompt("Enter the length of the table:");  
+        document.write("<h2>Multiplication Table of " + tableNumber + ":</h2>");  
+        for (var i = 1; i <= tableLength; i++) {  
+            document.write(tableNumber + " x " + i + " = " + (tableNumber * i) + "<br>");  
+        }  
+        document.write("<br>");  
+
+        // 5. Print fruits array using for loop.  
+        var fruits = ["apple", "banana", "mango", "orange", "strawberry"];  
+        document.write("<h2>Fruits:</h2>");  
+        for (var i = 0; i < fruits.length; i++) {  
+            document.write(fruits[i] + "<br>");  
+        }  
+        document.write("<br>");  
+
+        // 6. Generate series  
+        document.write("<h2>Generated Series:</h2>");  
+
+        // a. Counting  
+        document.write("Counting: ");  
+        for (var i = 1; i <= 15; i++) {  
+            document.write(i + (i < 15 ? ', ' : ''));  
+        }  
+        document.write("<br>");  
+
+        // b. Reverse counting  
+        document.write("Reverse counting: ");  
+        for (var i = 10; i >= 1; i--) {  
+            document.write(i + (i > 1 ? ', ' : ''));  
+        }  
+        document.write("<br>");  
+
+        // c. Even numbers  
+        document.write("Even: ");  
+        for (var i = 0; i <= 20; i += 2) {  
+            document.write(i + (i < 20 ? ', ' : ''));  
+        }  
+        document.write("<br>");  
+
+        // d. Odd numbers  
+        document.write("Odd: ");  
+        for (var i = 1; i < 20; i += 2) {  
+            document.write(i + (i < 19 ? ', ' : ''));  
+        }  
+        document.write("<br>");  
+
+        // e. Series for multiples of 2  
+        document.write("Series: ");  
+        for (var i = 2; i <= 20; i += 2) {  
+            document.write(i + "k" + (i < 20 ? ', ' : ''));  
+        }  
+        document.write("<br><br>");  
+
+        // 7. Search program in array  
+        var A = ["cake", "apple pie", "cookie", "chips", "patties"];  
+        var userInput = prompt("Enter an item to search in the array:").toLowerCase();  
+        if (A.includes(userInput)) {  
+            document.write("<h2>" + userInput + " is found in the list.</h2>");  
+        } else {  
+            document.write("<h2>" + userInput + " is not found in the list.</h2>");  
+        }  
+        document.write("<br>");  
+
+        // 8. Identify the largest number in the array.  
+        var largestArray = [24, 53, 78, 91, 12];  
+        var largestNumber = Math.max(...largestArray);  
+        document.write("<h2>The largest number in the array is: " + largestNumber + "</h2><br>");  
+
+        // 9. Identify the smallest number in the array.  
+        var smallestArray = [24, 53, 78, 91, 12];  
+        var smallestNumber = Math.min(...smallestArray);  
+        document.write("<h2>The smallest number in the array is: " + smallestNumber + "</h2><br>");  
+
+        // 10. Print multiples of 5 ranging from 1 to 100.  
+        document.write("<h2>Multiples of 5 from 1 to 100:</h2>");  
+        for (var i = 1; i <= 100; i++) {  
+            if (i % 5 === 0) {  
+                document.write(i + (i < 100 ? ', ' : ''));  
+            }  
+        }  
+    </script>  
+</head>  
+<body>  
+    <h1>JavaScript Arrays and Loops</h1>  
+</body>  
+</html>
